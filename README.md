@@ -16,12 +16,14 @@ LLM을 더 똑똑하게 만드는 것이 아니라, 똑똑한 LLM이 **결과를
 
 ## 2. 4겹 구조
 
-| 단계 | 무엇으로 | 파일 | 역할 |
-|---|---|---|---|
-| **Plan** | Skill + CLAUDE.md + Template | `.claude/skills/voc-handler/SKILL.md`, `CLAUDE.md`, `templates/summary_template.md` | 카테고리 7종·긴급도·출력 양식·체크리스트를 매뉴얼로 고정 |
-| **Build** | 산출물 빌더 + 오피스 Skill 2종 | `scripts/{generate_responses,build_classification,build_xlsx}.py`, `scripts/build_docx.js`, `.claude/skills/{xlsx,docx}/` | 응대·통계 생성 후 **xlsx(차트 포함)** 와 **docx**로 사내 배포 포맷까지 자동화 |
-| **Verify** | PostToolUse Hook 3종 + Stop Hook 1종 | `.claude/hooks/check_{pii,category,language,completeness}.py`, `.claude/settings.json` | Write/Edit 직후 PII·카테고리·언어 자동 검증, 작업 종료 직전 응대 50건 + json + md + **xlsx + docx** 5종 완성도 검증 |
-| **Fix** | Subagent 2종 | `.claude/agents/response-fixer.md`, `.claude/agents/summary-writer.md` | 차단된 응대 재작성, 통계 기반 경영진 요약 작성 |
+
+| 단계         | 무엇으로                               | 파일                                                                                                                        | 역할                                                                                       |
+| ---------- | ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
+| **Plan**   | Skill + CLAUDE.md + Template       | `.claude/skills/voc-handler/SKILL.md`, `CLAUDE.md`, `templates/summary_template.md`                                       | 카테고리 7종·긴급도·출력 양식·체크리스트를 매뉴얼로 고정                                                         |
+| **Build**  | 산출물 빌더 + 오피스 Skill 2종              | `scripts/{generate_responses,build_classification,build_xlsx}.py`, `scripts/build_docx.js`, `.claude/skills/{xlsx,docx}/` | 응대·통계 생성 후 **xlsx(차트 포함)** 와 **docx**로 사내 배포 포맷까지 자동화                                    |
+| **Verify** | PostToolUse Hook 3종 + Stop Hook 1종 | `.claude/hooks/check_{pii,category,language,completeness}.py`, `.claude/settings.json`                                    | Write/Edit 직후 PII·카테고리·언어 자동 검증, 작업 종료 직전 응대 50건 + json + md + **xlsx + docx** 5종 완성도 검증 |
+| **Fix**    | Subagent 2종                        | `.claude/agents/response-fixer.md`, `.claude/agents/summary-writer.md`                                                    | 차단된 응대 재작성, 통계 기반 경영진 요약 작성                                                              |
+
 
 **핵심 원리**: SKILL.md는 *부탁*이고 Hook은 *강제*다. 부탁은 잊혀지지만 시스템은 잊지 않는다.
 
@@ -131,11 +133,13 @@ classification.json 생성
 
 세 hook이 **모든** Write/Edit 직후 직렬로 실행된다. 응대 파일(`/responses/`)이 아니면 즉시 통과한다.
 
-| Hook | 차단 조건 | 차단 시 동작 |
-|---|---|---|
-| `check_pii.py` | 본문에 카드번호(16자리), 주민번호(13자리), 휴대폰(010-...), 이메일이 그대로 인용됨 | exit 2 + 정책 안내 stderr |
-| `check_category.py` | `CATEGORY:` 누락, 또는 허용 7종(`REFUND_REQUEST`/`PAYMENT_INQUIRY`/`SIGNUP_ISSUE`/`DELIVERY_INQUIRY`/`PRODUCT_INQUIRY`/`COMPLAINT`/`OTHER`) 외 값. `URGENCY:`도 동일 (HIGH/MEDIUM/LOW) | exit 2 + 허용 목록 stderr |
-| `check_language.py` | 본문에 영어 단어 7개 이상 연속, 또는 한글 10자 미만 | exit 2 + 위반 스니펫 stderr |
+
+| Hook                | 차단 조건                                                                                                                                                                      | 차단 시 동작                |
+| ------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------- |
+| `check_pii.py`      | 본문에 카드번호(16자리), 주민번호(13자리), 휴대폰(010-...), 이메일이 그대로 인용됨                                                                                                                     | exit 2 + 정책 안내 stderr  |
+| `check_category.py` | `CATEGORY:` 누락, 또는 허용 7종(`REFUND_REQUEST`/`PAYMENT_INQUIRY`/`SIGNUP_ISSUE`/`DELIVERY_INQUIRY`/`PRODUCT_INQUIRY`/`COMPLAINT`/`OTHER`) 외 값. `URGENCY:`도 동일 (HIGH/MEDIUM/LOW) | exit 2 + 허용 목록 stderr  |
+| `check_language.py` | 본문에 영어 단어 7개 이상 연속, 또는 한글 10자 미만                                                                                                                                           | exit 2 + 위반 스니펫 stderr |
+
 
 ### 5.2 Stop Hook — `matcher: ""`
 
@@ -166,6 +170,7 @@ claude
 ```
 
 세션 안에서 명령:
+
 ```
 voc_data 50건 일괄 처리해줘.
 output/responses/, output/classification.json, output/executive_summary.md 세 가지 산출물 필요.
@@ -228,6 +233,7 @@ inquiry: 주문번호 20260501-7821 환불 요청합니다. 제품 하자가 있
 ```
 
 **의도된 함정**:
+
 - 카드번호 인용: voc_008, voc_011, voc_012, voc_013, voc_016, voc_026
 - 주민번호 인용: voc_014, voc_041
 - 이메일/휴대폰 인용: voc_025, voc_042, voc_043
@@ -268,18 +274,20 @@ URGENCY: MEDIUM
 
 ## 9. 검증된 동작 (마지막 실행 결과)
 
-| 항목 | 결과 |
-|---|---|
-| 응대 파일 생성 | 50 / 50 |
-| PostToolUse hook 3종 일괄 적용 | 150 / 150 PASS |
-| 응대 본문 카드번호 grep | 0건 |
-| 응대 본문 주민번호 grep | 0건 |
-| 응대 본문 휴대폰 grep | 0건 |
-| Stop hook 최종 통과 (5종 산출물) | ✅ exit 0 |
-| 카테고리 분포 일관성 | 7종 모두 사용, 변형 표기 0건 |
-| 통계 ↔ 요약 숫자 일치 | 100% |
+
+| 항목                          | 결과                                    |
+| --------------------------- | ------------------------------------- |
+| 응대 파일 생성                    | 50 / 50                               |
+| PostToolUse hook 3종 일괄 적용   | 150 / 150 PASS                        |
+| 응대 본문 카드번호 grep             | 0건                                    |
+| 응대 본문 주민번호 grep             | 0건                                    |
+| 응대 본문 휴대폰 grep              | 0건                                    |
+| Stop hook 최종 통과 (5종 산출물)    | ✅ exit 0                              |
+| 카테고리 분포 일관성                 | 7종 모두 사용, 변형 표기 0건                    |
+| 통계 ↔ 요약 숫자 일치               | 100%                                  |
 | `classification_stats.xlsx` | 5 시트, 12 수식 (`recalc.py` 에러 0), 차트 3개 |
-| `executive_summary.docx` | pandoc 라운드트립으로 제목·표·bullet 모두 보존 확인 |
+| `executive_summary.docx`    | pandoc 라운드트립으로 제목·표·bullet 모두 보존 확인   |
+
 
 **의도적 hook 발동 사례**: voc_011 응대 초안에 카드번호를 그대로 인용 → `check_pii` exit 2 → 우회 문구("고객님께서 알려주신 결제 수단 정보를 기준으로")로 재작성 → 재검증 통과. *바로 이 차단·재작성·재검증 루프가 하네스의 결정적 장면이다.*
 
@@ -287,13 +295,15 @@ URGENCY: MEDIUM
 
 ## 10. 비교 — Bare vs Harness
 
-| 차원 | Bare (`demo-bare/`) | Harness (`demo-harness/`) |
-|---|---|---|
-| 카테고리 표기 일관성 | "환불요청", "refund", "환불 문의" 혼재 | 7종 고정, 위반 시 차단 |
-| PII 인용 | 카드·주민번호가 응대에 그대로 노출 가능 | hook이 송신 전 0건으로 강제 |
-| 언어 일관성 | 입력이 영어면 응대도 영어로 흘러감 | 한국어 외 차단 |
-| 완성도 | "50건 처리했습니다" 선언 후 실제 30건 흔함 | Stop hook이 누락 voc_id까지 짚어서 차단 |
-| 자기 검증 | 없음 | 자동 + 강제 |
+
+| 차원          | Bare (`demo-bare/`)          | Harness (`demo-harness/`)     |
+| ----------- | ---------------------------- | ----------------------------- |
+| 카테고리 표기 일관성 | "환불요청", "refund", "환불 문의" 혼재 | 7종 고정, 위반 시 차단                |
+| PII 인용      | 카드·주민번호가 응대에 그대로 노출 가능       | hook이 송신 전 0건으로 강제            |
+| 언어 일관성      | 입력이 영어면 응대도 영어로 흘러감          | 한국어 외 차단                      |
+| 완성도         | "50건 처리했습니다" 선언 후 실제 30건 흔함  | Stop hook이 누락 voc_id까지 짚어서 차단 |
+| 자기 검증       | 없음                           | 자동 + 강제                       |
+
 
 ---
 
@@ -310,3 +320,4 @@ URGENCY: MEDIUM
 
 > **Claude Code는 Anthropic이 잘 훈련시킨 신입사원이다.**
 > **우리가 할 일은 그 사람을 우리 회사 사람으로 만드는 것 — 매뉴얼·도구·검증·전문가, 네 안전장치로 자율 루프를 길들이는 것. 그게 하네스 엔지니어링이다.**
+
