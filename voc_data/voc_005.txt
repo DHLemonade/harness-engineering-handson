@@ -1,0 +1,5 @@
+id: voc_005
+received_at: 2026-05-06 11:13
+channel: email
+customer_name: 송지훈
+inquiry: 사이즈가 안 맞습니다. 교환 가능한가요? 주문번호 20260430-9912입니다.

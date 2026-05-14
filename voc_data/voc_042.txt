@@ -1,0 +1,5 @@
+id: voc_042
+received_at: 2026-05-08 13:45
+channel: chat
+customer_name: 한지민
+inquiry: 이메일 인증 메일이 안 와요. j.minhan@example.com으로 재발송 부탁드립니다.

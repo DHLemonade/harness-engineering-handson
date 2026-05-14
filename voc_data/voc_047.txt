@@ -1,0 +1,5 @@
+id: voc_047
+received_at: 2026-05-08 16:52
+channel: email
+customer_name: 모지영
+inquiry: 배송 주소를 잘못 입력했어요. 출고 전에 변경 가능할까요? 주문번호 20260508-2210

@@ -1,0 +1,5 @@
+id: voc_004
+received_at: 2026-05-06 10:42
+channel: chat
+customer_name: 임수빈
+inquiry: 제품 색상이 사진과 너무 달라요. 반품할 수 있나요?

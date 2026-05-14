@@ -1,0 +1,5 @@
+id: voc_030
+received_at: 2026-05-07 16:45
+channel: chat
+customer_name: 장미경
+inquiry: 진짜 너무 화가 납니다. 이딴 식으로 장사하지 마세요. 환불 안 해주면 가만 안 둡니다.

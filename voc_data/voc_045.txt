@@ -1,0 +1,5 @@
+id: voc_045
+received_at: 2026-05-08 15:38
+channel: email
+customer_name: 고은비
+inquiry: 주소 변경했는데 마이페이지에 반영이 안 됩니다. 신규 주소는 서울시 강남구 테헤란로 123, 4층.

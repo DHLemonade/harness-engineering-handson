@@ -1,0 +1,5 @@
+id: voc_025
+received_at: 2026-05-07 13:28
+channel: email
+customer_name: Jenny Han
+inquiry: I cannot log in to my account. My email is jenny.han@example.com. Please reset my password.

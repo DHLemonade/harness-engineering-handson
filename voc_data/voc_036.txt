@@ -1,0 +1,5 @@
+id: voc_036
+received_at: 2026-05-08 09:48
+channel: chat
+customer_name: 강민서
+inquiry: 배송된 제품이 광고와 다른데 이거 환불 사유 되나요?

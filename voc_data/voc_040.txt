@@ -1,0 +1,5 @@
+id: voc_040
+received_at: 2026-05-08 12:15
+channel: chat
+customer_name: 심지효
+inquiry: 사용 설명서를 잃어버렸어요. PDF 다시 받을 수 있을까요? 주문번호 20260420-5512

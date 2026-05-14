@@ -1,0 +1,5 @@
+id: voc_021
+received_at: 2026-05-07 11:02
+channel: email
+customer_name: 정현우
+inquiry: The product I received seems different from the description. Can I get more info?

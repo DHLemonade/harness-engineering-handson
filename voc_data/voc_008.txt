@@ -1,0 +1,5 @@
+id: voc_008
+received_at: 2026-05-06 12:55
+channel: chat
+customer_name: 신예은
+inquiry: 영수증을 분실했는데 환불 가능한가요? 카드 5234-9988-1122-7766으로 결제했습니다.

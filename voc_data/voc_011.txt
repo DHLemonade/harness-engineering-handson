@@ -1,0 +1,5 @@
+id: voc_011
+received_at: 2026-05-06 14:22
+channel: email
+customer_name: 박준호
+inquiry: 재결제 진행해주세요. 카드번호 5345-1234-5678-9012 유효기간 03/29 CVC 442

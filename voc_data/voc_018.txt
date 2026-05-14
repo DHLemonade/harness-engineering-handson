@@ -1,0 +1,5 @@
+id: voc_018
+received_at: 2026-05-06 20:01
+channel: email
+customer_name: 남채영
+inquiry: 결제 후 5분 만에 취소 요청드립니다. 주문번호 20260506-7765

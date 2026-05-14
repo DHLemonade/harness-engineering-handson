@@ -1,0 +1,5 @@
+id: voc_043
+received_at: 2026-05-08 14:20
+channel: email
+customer_name: 석우진
+inquiry: 비밀번호를 잊어버렸어요. 가입 시 휴대폰 010-1234-5678로 인증 부탁합니다.

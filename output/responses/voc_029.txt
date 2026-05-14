@@ -1,0 +1,4 @@
+CATEGORY: PAYMENT_INQUIRY
+URGENCY: LOW
+---
+Olivia Seo 고객님, 할인 코드 SUMMER2026 적용 오류로 불편을 드려 죄송합니다. 결제 단계의 코드 인식 문제를 점검 중이며, 정상 적용을 확인한 뒤 별도로 안내드리겠습니다.

@@ -1,0 +1,5 @@
+id: voc_046
+received_at: 2026-05-08 16:15
+channel: chat
+customer_name: 편우석
+inquiry: 예상 배송일이 언제인가요? 주문번호 20260507-8843입니다.

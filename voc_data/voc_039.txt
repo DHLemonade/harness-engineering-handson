@@ -1,0 +1,5 @@
+id: voc_039
+received_at: 2026-05-08 11:38
+channel: email
+customer_name: 추현빈
+inquiry: 해당 상품 재입고 일정이 어떻게 되나요? 6월 전에 받고 싶어서요.

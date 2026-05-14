@@ -1,0 +1,16 @@
+{
+  "name": "demo-harness",
+  "version": "1.0.0",
+  "description": "VoC(고객의 소리) 50건을 분류·응대·요약하는 작업을, 똑똑하지만 통제되지 않은 LLM Agent에게 시켜서 **실패시키지 않는** 4겹 하네스 데모.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "docx": "^9.6.1"
+  }
+}

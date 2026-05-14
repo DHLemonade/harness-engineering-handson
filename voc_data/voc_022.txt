@@ -1,0 +1,5 @@
+id: voc_022
+received_at: 2026-05-07 11:38
+channel: chat
+customer_name: David Park
+inquiry: Hello, what is the shipping time to Singapore? My address is 123 Orchard Road, #12-04.

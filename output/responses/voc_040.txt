@@ -1,0 +1,4 @@
+CATEGORY: PRODUCT_INQUIRY
+URGENCY: LOW
+---
+심지효 고객님, 사용 설명서 재발송 요청 감사합니다. 주문 내역 확인 후 PDF 파일을 가입하신 이메일로 발송해드리겠습니다.

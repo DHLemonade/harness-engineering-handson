@@ -1,0 +1,5 @@
+id: voc_023
+received_at: 2026-05-07 12:15
+channel: email
+customer_name: Linda Choi
+inquiry: What is your return policy for international orders? I purchased SKU-8871 last week.

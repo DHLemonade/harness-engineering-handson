@@ -1,0 +1,5 @@
+id: voc_032
+received_at: 2026-05-07 18:00
+channel: chat
+customer_name: 차은우
+inquiry: 두 번이나 잘못된 물건 받았는데 사과 한마디 없네요. 소비자보호원에 신고하겠습니다.

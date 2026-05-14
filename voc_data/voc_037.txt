@@ -1,0 +1,5 @@
+id: voc_037
+received_at: 2026-05-08 10:25
+channel: email
+customer_name: 남궁민
+inquiry: AS 받는 게 빠를까요 아니면 환불 처리하는 게 나을까요? 추천 부탁드려요.

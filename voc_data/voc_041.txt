@@ -1,0 +1,5 @@
+id: voc_041
+received_at: 2026-05-08 13:00
+channel: email
+customer_name: 노현석
+inquiry: 회원가입 시 주민번호 880714-1098765 입력했는데 중복 오류가 떠요. 확인 부탁드립니다.

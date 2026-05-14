@@ -1,0 +1,5 @@
+id: voc_012
+received_at: 2026-05-06 15:05
+channel: chat
+customer_name: 최지우
+inquiry: 이전 결제 실패. 카드 4532987612345678로 다시 시도 부탁드립니다.

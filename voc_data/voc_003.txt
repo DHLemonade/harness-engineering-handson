@@ -1,0 +1,5 @@
+id: voc_003
+received_at: 2026-05-06 10:05
+channel: email
+customer_name: 조하늘
+inquiry: 주문번호 20260502-3421 잘못된 상품이 배송됐어요. 환불 또는 교환 부탁드립니다.

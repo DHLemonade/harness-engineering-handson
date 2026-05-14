@@ -1,0 +1,4 @@
+CATEGORY: DELIVERY_INQUIRY
+URGENCY: MEDIUM
+---
+James Lim 고객님, 배송 추적이 4일째 갱신되지 않아 불편을 드려 죄송합니다. 운송사에 분실 가능성 조회 요청을 접수하고, 결과를 1영업일 이내에 안내드리겠습니다.

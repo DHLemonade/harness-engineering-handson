@@ -1,0 +1,5 @@
+id: voc_024
+received_at: 2026-05-07 12:52
+channel: chat
+customer_name: Michael Lee
+inquiry: Is this product compatible with iPhone 15 Pro? Spec page is unclear, please confirm.

@@ -1,0 +1,4 @@
+CATEGORY: PRODUCT_INQUIRY
+URGENCY: LOW
+---
+Michael Lee 고객님, 호환 여부 문의 감사합니다. 해당 제품은 iPhone 15 Pro와 호환되며, 자세한 사양은 제품 상세 페이지의 호환 표를 통해 확인하실 수 있도록 안내 업데이트하겠습니다.

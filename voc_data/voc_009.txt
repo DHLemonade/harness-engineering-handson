@@ -1,0 +1,5 @@
+id: voc_009
+received_at: 2026-05-06 13:30
+channel: email
+customer_name: 문도현
+inquiry: 단순 변심으로 반품하고 싶습니다. 배송비는 제가 부담하겠습니다.

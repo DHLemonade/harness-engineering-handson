@@ -1,0 +1,5 @@
+id: voc_034
+received_at: 2026-05-07 19:12
+channel: chat
+customer_name: 주민혁
+inquiry: 이번 일로 정신적 피해 보상까지 요청합니다. 안 그러면 SNS에 다 올리겠습니다.

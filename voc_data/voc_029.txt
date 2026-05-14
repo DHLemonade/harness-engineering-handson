@@ -1,0 +1,5 @@
+id: voc_029
+received_at: 2026-05-07 15:55
+channel: email
+customer_name: Olivia Seo
+inquiry: Is the discount code SUMMER2026 still valid? Banner shows active but checkout says expired.

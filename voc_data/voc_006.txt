@@ -1,0 +1,5 @@
+id: voc_006
+received_at: 2026-05-06 11:48
+channel: chat
+customer_name: 김하린
+inquiry: 주문한 지 10일이 지났는데 아직도 배송 안 됐어요. 환불해주세요.

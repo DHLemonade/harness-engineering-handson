@@ -1,0 +1,5 @@
+id: voc_038
+received_at: 2026-05-08 11:02
+channel: chat
+customer_name: 여진아
+inquiry: 이거 문의 카테고리를 모르겠는데 그냥 여쭤봅니다. 사용 중 이상한 소리가 나요.

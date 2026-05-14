@@ -1,0 +1,5 @@
+id: voc_014
+received_at: 2026-05-06 17:33
+channel: email
+customer_name: 한도윤
+inquiry: 회원가입이 안 됩니다. 주민번호 901225-1234567 인증이 계속 실패해요.

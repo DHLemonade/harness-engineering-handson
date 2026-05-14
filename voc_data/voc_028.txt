@@ -1,0 +1,5 @@
+id: voc_028
+received_at: 2026-05-07 15:18
+channel: chat
+customer_name: James Lim
+inquiry: Where is my order? Tracking number GB123456789KR has not updated for 4 days.

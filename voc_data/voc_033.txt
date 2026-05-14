@@ -1,0 +1,5 @@
+id: voc_033
+received_at: 2026-05-07 18:35
+channel: email
+customer_name: 백승호
+inquiry: 상담원이 무성의하게 응답해서 너무 짜증납니다. 책임자 연결해주세요.

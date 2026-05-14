@@ -1,0 +1,5 @@
+id: voc_002
+received_at: 2026-05-06 09:31
+channel: chat
+customer_name: 이서연
+inquiry: 환불 처리가 너무 늦어요. 일주일째 기다리고 있습니다.

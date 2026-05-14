@@ -1,0 +1,5 @@
+id: voc_050
+received_at: 2026-05-08 18:35
+channel: chat
+customer_name: 제갈민
+inquiry: 5월 이벤트 참여하고 싶은데 어떻게 신청하나요? 응모 페이지가 안 열려요.

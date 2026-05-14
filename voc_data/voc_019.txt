@@ -1,0 +1,5 @@
+id: voc_019
+received_at: 2026-05-06 20:35
+channel: chat
+customer_name: 곽민철
+inquiry: 포인트 사용했는데 결제가 안 됐어요. 포인트 환원 부탁드립니다. 회원 ID kwak_mc

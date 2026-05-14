@@ -1,0 +1,5 @@
+id: voc_048
+received_at: 2026-05-08 17:30
+channel: chat
+customer_name: 왕태식
+inquiry: 택배 분실된 것 같아요. 일주일째 운송장 추적이 안 됩니다. 송장 658123456789

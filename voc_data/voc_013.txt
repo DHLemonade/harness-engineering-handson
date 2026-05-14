@@ -1,0 +1,5 @@
+id: voc_013
+received_at: 2026-05-06 15:42
+channel: email
+customer_name: 유재성
+inquiry: 결제 시스템 오류로 두 번 결제됐어요. 카드 5412-7788-3344-9988 한 건 취소 요청드립니다.

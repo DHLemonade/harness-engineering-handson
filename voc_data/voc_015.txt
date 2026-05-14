@@ -1,0 +1,5 @@
+id: voc_015
+received_at: 2026-05-06 18:10
+channel: chat
+customer_name: 권나영
+inquiry: 결제 영수증 발급 부탁드립니다. 주문번호 20260505-1102, 사업자등록증 211-86-77821 처리해주세요.

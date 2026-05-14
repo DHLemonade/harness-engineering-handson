@@ -1,0 +1,22 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          { "type": "command", "command": "python3 .claude/hooks/check_pii.py" },
+          { "type": "command", "command": "python3 .claude/hooks/check_category.py" },
+          { "type": "command", "command": "python3 .claude/hooks/check_language.py" }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "matcher": "",
+        "hooks": [
+          { "type": "command", "command": "python3 .claude/hooks/check_completeness.py" }
+        ]
+      }
+    ]
+  }
+}

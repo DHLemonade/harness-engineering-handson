@@ -1,0 +1,5 @@
+id: voc_044
+received_at: 2026-05-08 15:00
+channel: chat
+customer_name: 진수아
+inquiry: 회원 탈퇴 신청합니다. 가입한 모든 개인정보 삭제해주세요. 회원ID jin_sua88

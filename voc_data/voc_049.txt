@@ -1,0 +1,5 @@
+id: voc_049
+received_at: 2026-05-08 18:00
+channel: email
+customer_name: 팽소희
+inquiry: 멤버십 등급 혜택이 어떻게 되나요? VIP 등업 조건도 알려주세요.

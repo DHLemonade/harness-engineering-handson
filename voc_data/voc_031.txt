@@ -1,0 +1,5 @@
+id: voc_031
+received_at: 2026-05-07 17:20
+channel: email
+customer_name: 오태준
+inquiry: XX 이게 무슨 회사야. 고객을 호구로 보나. 당장 처리 안 하면 신고할 거다.

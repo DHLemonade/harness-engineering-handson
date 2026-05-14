@@ -1,0 +1,5 @@
+id: voc_026
+received_at: 2026-05-07 14:05
+channel: chat
+customer_name: Robert Cho
+inquiry: Can you confirm my payment? Order 20260507-2245, card 4485-9988-7766-1122 expires 05/28.

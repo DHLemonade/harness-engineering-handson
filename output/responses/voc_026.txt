@@ -1,0 +1,4 @@
+CATEGORY: PAYMENT_INQUIRY
+URGENCY: MEDIUM
+---
+Robert Cho 고객님, 결제 확인 요청 감사합니다. 카드 정보는 응대에 포함하지 않으며, 주문번호를 기준으로 결제 상태를 확인한 결과를 별도로 안내드리겠습니다.

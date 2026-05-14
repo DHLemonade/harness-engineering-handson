@@ -1,0 +1,5 @@
+id: voc_010
+received_at: 2026-05-06 13:58
+channel: chat
+customer_name: 홍지아
+inquiry: 세트 상품 중 하나만 불량입니다. 부분 환불 가능한가요?

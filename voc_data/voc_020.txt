@@ -1,0 +1,5 @@
+id: voc_020
+received_at: 2026-05-07 10:14
+channel: chat
+customer_name: Sarah Kim
+inquiry: Hi please tell me about your new product launch in May. Looking forward to your reply.

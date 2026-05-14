@@ -1,0 +1,5 @@
+id: voc_017
+received_at: 2026-05-06 19:20
+channel: chat
+customer_name: 장태민
+inquiry: 할부 개월 수 변경 가능한가요? 3개월에서 6개월로 바꾸고 싶어요. 주문번호 20260506-3387
